@@ -1,0 +1,25 @@
+{
+  "name": "root name",
+  "item1": {
+    "name": "First item",
+    "available": 9,
+    "available_str": "9",
+    "created-at": "2018-10-01T10:20:00Z"
+  },
+  "item2": {
+    "name": "Second item",
+    "available": 20,
+    "available_str": "20",
+    "created-at": "2018-11-05T02:26:05Z"
+  },
+  "item3": {
+    "name": "Third item",
+    "available": 9,
+    "created-at": "2018-12-05T08:21:55Z"
+  },
+  "item4": {
+    "name": "Fourth item",
+    "available": 30,
+    "created-at": "2018-12-05T12:01:34Z"
+  }
+}
