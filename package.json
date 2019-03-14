@@ -2,18 +2,24 @@
   "name": "cheap-eval",
   "version": "0.0.1",
   "description": "Fast eval engine inspired by mapbox-gl-js expressions",
-  "main": "src/cheap-eval.js",
+  "main": "dist/cheap-eval.js",
+  "types": "dist/cheap-eval.d.ts",
   "scripts": {
     "minify": "uglifyjs --compress --mangle --output dist/cheap-eval.min.js -- dist/cheap-eval.js",
     "build": "tsc --declaration && npm run minify",
-    "test": "tape test/test.js"
+    "test": "tape test/test.js",
+    "prepublishOnly": "npm run build && npm test",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tages"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zeeyang/cheap-eval.git"
   },
+  "files": ["dist/**/*"],
   "keywords": [
     "rules",
+    "validate",
     "assert",
     "eval"
   ],
