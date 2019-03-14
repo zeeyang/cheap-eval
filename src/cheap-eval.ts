@@ -88,7 +88,7 @@ function compileHasOp(property: string) {
     let decent = "p"
     const paths = property.split(".").map(path => {
         const op = `${JSON.stringify(path)} in ${decent}`
-        decent = `${decent}.${path}`
+        decent = `${decent}[${JSON.stringify(path)}]`
         return op
     })
     return paths.join(" && ")

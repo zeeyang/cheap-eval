@@ -21,5 +21,13 @@
     "name": "Fourth item",
     "available": 30,
     "created-at": "2018-12-05T12:01:34Z"
-  }
+  },
+  "locations": [
+    {
+      "name": "Location One"
+    },
+    {
+      "name": "Location Two"
+    }
+  ]
 }

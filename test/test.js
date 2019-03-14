@@ -18,6 +18,10 @@ test("get", t => {
     exp = createEval(["get", "does-not-exist"])
     t.equal(exp(object), undefined)
 
+    // Get array
+    exp = createEval(["get", "locations.0.name"])
+    t.equal(exp(object), "Location One")
+
     // Nested undefined
     exp = createEval(["get", "does-not-exist.xxx"])
     t.equal(exp(object), undefined)
